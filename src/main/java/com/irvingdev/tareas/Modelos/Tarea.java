@@ -14,7 +14,7 @@ import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="Tarea")
+@Table(name="TAREA")
 public class Tarea implements Serializable{
 
     @Id
@@ -39,7 +39,6 @@ public class Tarea implements Serializable{
     @Column(nullable = false)
     private Prioridad prioridad;
 
-    @Column(nullable = false)
     @OneToOne
     @JoinColumn(name = "id_usuario")
     private Usuario usuario;
